@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import styles from "../styles/HomePage.module.scss"
-import { content } from './content'
+import { content } from "../db/content"
 
 let i = 4
 

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { content } from "../content"
+import { content } from "../../db/content"
 import { useState, useEffect } from "react"
 import styles from './id.module.scss'
 import Head from "next/head"
