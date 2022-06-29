@@ -43,7 +43,7 @@ export default function Post() {
             if (post.id == Id) {
                 post.title = newTitle
                 post.text = newText
-                document.getElementById('postTitle').textContent = `Запись "${newTitle}"`
+                document.getElementById('postTitle').textContent = `Запись  \"${newTitle} \"`
             }
         })
     }
