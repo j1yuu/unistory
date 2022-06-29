@@ -1,0 +1,112 @@
+.page {
+    position: relative;
+}
+.main__title {
+    text-align: center;
+    font-size: 5.4rem;
+    margin-bottom: 5rem;
+}
+.main__posts {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+.main__post {
+    width: 38rem;
+
+    p {
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center; 
+        margin-bottom: 2rem;
+        max-width: 100%;
+    }
+    textarea {
+        width: 100%;
+        height: 15rem; 
+        margin-bottom: 2rem;
+        padding: 5px;
+    }
+}
+.main__link {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    border: 2px solid #8598B6;
+    border-radius: 7px;   
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.main__add {
+    display: block;
+    margin-left:auto;
+    padding: 5px;  
+    font-size: 12px; 
+}
+.modal__form {
+    background-color: #fff;
+    width: 120rem;
+    margin: 15rem auto 0;
+    padding: 4rem;
+    position: relative;
+    border-radius: 2rem;
+}
+.modal__container {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        margin-bottom: 2rem;
+        padding: 3px;
+    }
+
+    textarea {
+        height: 30rem;
+        padding: 3px;
+    }
+
+    margin-bottom: 5rem;
+}
+.modal__buttons {
+    display: flex;
+}
+.modal__reject,
+.modal__save {
+    display: block;
+    padding: 5px;
+}
+.modal__reject {
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+@media (min-width: 48em) {
+    .main__link:hover,
+    .main__add:hover,
+    .modal__reject:hover,
+    .modal__save:hover{
+        background-color: #DAE8FC;
+        border-color: #8598B6;
+    }
+}
+
+@media (max-width: 48em) {
+    .main__post {
+        width: 28rem;   
+        p {
+            font-size: 1.4rem
+        }
+    }
+    .main__add {
+        width: 15rem;
+        padding: 1rem 0;
+    }
+    .modal__form {
+        width: 28rem;
+    }
+    
+}

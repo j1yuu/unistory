@@ -1,0 +1,62 @@
+html,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 0.69444vw;
+    background-color: #F5F5F5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(2, 2, 2, 0.5);
+}
+
+.void {
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  z-index: 0;
+}
+
+.modal-inactive {
+  display: none;
+}
+
+.container {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  width: 120rem;
+  margin: 0 auto;
+}
+
+@media (max-width: 48em) {
+  html, body {
+    font-size: 3.125vw
+  }
+
+  .container {
+    width: 28rem;
+  }
+  .modal-active {
+    height: 400vw;
+  }
+}
+
+
+

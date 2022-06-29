@@ -1,0 +1,132 @@
+.page{
+    position: relative;
+}
+.link {
+    display: block;
+    margin-bottom: 6rem;
+    width: 15rem;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #8598B6;
+    border-radius: 3px;   
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.post {
+    display: flex;
+    flex-direction: column;
+    input {
+        padding: 3px;
+        margin-bottom: 2rem;
+    }
+    textarea {
+        padding: 3px;
+        margin-bottom: 2rem;    
+        min-height: 30rem;
+    }
+}
+.post__title {
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    button {
+        font-size: 12px;
+        width: 15rem;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+.modal__container {
+    border-radius: 10px;
+    width: 60rem;
+    background-color: #fff;
+    height: 30rem;
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, 45%);
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    h2 {
+        text-align: center;
+        font-size: 14px;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        button {
+            font-size: 12px;
+            padding: 3px 12px;
+            width: 13rem;
+        }     
+    }
+}
+.deleted {
+    h1 {
+        text-align: center;
+        font-size: 36px;
+    }
+    a {
+        font-size: 18px;
+        display: block;
+        width: 15rem;
+        margin: 3rem auto 0;
+        text-align: center;
+        border: 1px solid #8598B6;
+        border-radius: 3px;   
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+}
+@media (min-width: 48em) {
+    .buttons {
+        button {
+            &:first-child:hover {
+                background-color: rgb(236, 159, 159);
+                border-color: rgb(211, 3, 3);
+            }
+            &:last-child:hover {
+                background-color: #DAE8FC;
+                border-color: #8598B6;
+            }
+        }
+    }
+    .link:hover {
+        background-color: #DAE8FC;
+        border-color: #8598B6;
+    }
+    .deleted {
+        a:hover {
+            background-color: #DAE8FC;
+                border-color: #8598B6;  
+        }
+    }
+}
+
+@media (max-width: 48em) {
+    .buttons {
+        button {
+            width: 12rem;
+        }
+    }
+    .modal__container {
+        width: 28rem;
+        top: 5%;
+        height: 20rem;
+        div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 2rem
+        }
+    }
+}
