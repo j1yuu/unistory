@@ -43,7 +43,7 @@ export default function Post() {
             if (post.id == Id) {
                 post.title = newTitle
                 post.text = newText
-                document.getElementById('postTitle').textContent = `Запись  \"${newTitle} \"`
+                document.getElementById('postTitle').textContent = `Запись  \"${newTitle}\"`
             }
         })
     }
@@ -85,7 +85,7 @@ export default function Post() {
                                     <a className={styles.link}>Назад</a>
                                 </Link>
                                 <div className={styles.post}>
-                                    <h1 id="postTitle" className={styles.post__title}>Запись "{post.title}"</h1>
+                                    <h1 id="postTitle" className={styles.post__title}>Запись &quot;{post.title}&quot;</h1>
                                     <input type="text" id="editTitle" name="editTitle" defaultValue={post.title} />
                                     <textarea id="editText" name="editText" defaultValue={post.text} />
                                     <div className={styles.buttons}>
