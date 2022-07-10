@@ -1,7 +1,7 @@
 import Link from "next/link"
-import { content } from "../../db/content"
+import { content } from "../../components/content"
 import { useState, useEffect } from "react"
-import styles from './id.module.scss'
+import styles from '../../styles/id.module.scss'
 import Head from "next/head"
 
 export default function Post() {

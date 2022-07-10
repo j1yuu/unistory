@@ -12,11 +12,12 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 3rem;
     margin-bottom: 6rem;
 }
 .main__post {
-    width: 38rem;
+    width: 39rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
 
     p {
         font-size: 14px;

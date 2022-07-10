@@ -2,9 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useState } from 'react'
 import styles from "../styles/HomePage.module.scss"
-import { content } from "../db/content"
+import { content } from "../components/content"
+import { settingId } from "../components/setId"
 
-let i = 4
 
 export default function HomePage() {
   const [modal, setModal] = useState(false)
@@ -20,6 +20,7 @@ export default function HomePage() {
     e.preventDefault()
     var inpText = document.getElementById('inpText').value
     var inpTitle = document.getElementById('inpTitle').value
+    let i = settingId(1000)
 
     content.push({
       id: i,
@@ -29,7 +30,6 @@ export default function HomePage() {
 
     // and also cleaning modal 
     setModal(modal = !modal)
-    i++
     document.getElementById('inpTitle').value = ""
     document.getElementById('inpText').value = ""
   }
